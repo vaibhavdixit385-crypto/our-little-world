@@ -1,0 +1,73 @@
+:root{--k:#0a0408;--b:#2a0a16;--w:#5c0f2b;--p:#ff2d87;--bl:#ffb3cf;--t:#fbe9f0;--glow:0 0 18px rgba(255,45,135,.55);--hd:"Great Vibes",Pacifico,"Brush Script MT",cursive;--hw:Caveat,"Segoe Print",cursive}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%;overflow:hidden;background:var(--k);color:var(--t);font:16px/1.6 Poppins,"Segoe UI",system-ui,sans-serif}
+body{background:radial-gradient(circle at 50% 0,var(--w),var(--b) 45%,var(--k))}
+:focus-visible{outline:3px solid var(--bl);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+#hearts,.sky{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:1}
+#hearts span,.sky span{position:absolute;bottom:-60px;color:var(--p);animation:rise linear infinite}
+.sky span{width:44px;height:56px;border-radius:50% 50% 50% 50%/45% 45% 55% 55%;background:radial-gradient(circle at 30% 30%,var(--bl),var(--p) 60%,#c2185b)}
+@keyframes rise{from{opacity:.6;transform:translateY(0)}to{opacity:0;transform:translateY(-115vh) rotate(25deg)}}
+#fx{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
+.screen{position:fixed;inset:0;display:none;overflow-x:hidden;overflow-y:auto;padding:24px 16px 40px;z-index:2}
+.screen.active{display:flex;flex-direction:column;animation:in .8s both}
+@keyframes in{from{opacity:0;filter:blur(8px)}to{opacity:1;filter:none}}
+.wrap{margin:auto;width:100%;max-width:460px;text-align:center}
+.wrap.wide{max-width:900px}
+.wrap>*+*{margin-top:14px}
+h1,h2{font:400 clamp(2.2rem,9vw,3.4rem)/1.2 var(--hd);color:#fff;text-shadow:0 0 12px var(--p),0 0 30px rgba(255,45,135,.5)}
+h1.big{font-size:clamp(2.6rem,12vw,5rem)}
+.date{letter-spacing:.2em;text-transform:uppercase;color:var(--bl)}
+.card{background:rgba(42,10,22,.62);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,45,135,.35);border-radius:20px;padding:24px 20px}
+.btn,.icon{font:600 16px Poppins,"Segoe UI",system-ui,sans-serif;color:#fff;cursor:pointer;border:0}
+.btn{min-height:48px;padding:0 28px;border-radius:999px;background:linear-gradient(135deg,#ff2d87,#c2185b);box-shadow:var(--glow)}
+.btn.sm{padding:0 18px}
+.btn.ghost{background:rgba(42,10,22,.75);border:1px solid var(--p)}
+.btn:disabled{opacity:.6;cursor:default}
+.icon{width:48px;height:48px;flex:none;border-radius:50%;background:rgba(42,10,22,.75);border:1px solid var(--p);color:var(--bl);font-size:20px}
+.icon[aria-pressed=true]{box-shadow:var(--glow)}
+#music{position:fixed;top:12px;right:12px;z-index:6}
+.lock{position:relative;width:64px;height:54px;margin:40px auto 14px;border-radius:14px;background:linear-gradient(135deg,#ff2d87,#c2185b);box-shadow:var(--glow);display:grid;place-items:center;font-size:26px;color:#fff}
+.lock::before{content:"";position:absolute;top:-24px;width:30px;height:30px;border:6px solid var(--bl);border-bottom:0;border-radius:20px 20px 0 0;transition:transform .6s}
+.lock.unlock{animation:pop .7s}
+.lock.unlock::before{transform:translateY(-10px) rotate(-20deg)}
+@keyframes pop{50%{transform:scale(1.2);box-shadow:0 0 36px var(--p)}}
+.field{display:flex;gap:8px;margin:16px 0 6px}
+input{flex:1;min-width:0;min-height:48px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,45,135,.5);background:rgba(0,0,0,.4);color:var(--t);font:16px Poppins,system-ui,sans-serif}
+.err{min-height:1.6em;margin:6px 0 10px;color:var(--bl)}
+.shake{animation:sh .45s}
+@keyframes sh{20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px 12px;padding:6px}
+@media(min-width:700px){.grid{grid-template-columns:repeat(3,1fr);gap:22px 18px}}
+.pol{background:#fff8f3;padding:8px 8px 4px;border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,.5);color:#3a1020;transform:rotate(var(--r));animation:fu .7s var(--d) both}
+@keyframes fu{from{opacity:0;transform:translateY(24px) rotate(var(--r))}to{opacity:1;transform:rotate(var(--r))}}
+.ph{aspect-ratio:4/5;background:#1a0a10;overflow:hidden}
+.ph img{display:block;width:100%;height:100%;object-fit:contain}
+.pol figcaption{font:500 20px/1.5 var(--hw);padding:4px 0}
+.pol.big{width:min(230px,70%);margin:18px auto;box-shadow:0 0 28px rgba(255,45,135,.7)}
+.stage{position:relative;width:min(100%,calc(55vh*.8));aspect-ratio:4/5;margin:14px auto 0;background:#12060b;border:1px solid rgba(255,45,135,.4);border-radius:16px;overflow:hidden;box-shadow:var(--glow)}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;opacity:0;transition:opacity .9s}
+.stage img.on{opacity:1}
+.capt{font:24px var(--hw);color:var(--bl)}
+.bar{height:6px;border-radius:9px;background:rgba(255,255,255,.15);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--p),var(--bl));transition:width .4s}
+.row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.letter{max-width:620px;margin:0 auto;text-align:left}
+.env{text-align:center;font-size:32px;color:var(--p);text-shadow:var(--glow)}
+#lt{font:21px/1.7 var(--hw);white-space:pre-line}
+#gh{visibility:hidden}
+.cake{position:relative;width:170px;height:140px;margin:34px auto 12px;filter:drop-shadow(0 0 16px rgba(255,45,135,.5))}
+.cake i{position:absolute;display:block;border-radius:12px}
+.c1{left:0;right:0;bottom:0;height:56px;background:linear-gradient(#7a1438,var(--w))}
+.c2{left:22px;right:22px;bottom:50px;height:44px;background:linear-gradient(#ff5ba3,var(--p))}
+.cd{left:50%;margin-left:-4px;bottom:92px;width:8px;height:32px;background:var(--bl);border-radius:3px}
+.cd b{position:absolute;top:-18px;left:-3px;width:14px;height:20px;background:radial-gradient(#fff,#ffb347 50%,transparent 72%);border-radius:50% 50% 50% 50%/60% 60% 40% 40%;box-shadow:0 0 14px #ffb347;animation:fl .15s infinite alternate}
+@keyframes fl{to{transform:scale(1.1,.9) translateX(1px);opacity:.85}}
+.msg{font:2rem/1.3 var(--hd);color:#fff;text-shadow:0 0 12px var(--p)}
+.sig{font:26px var(--hw);color:var(--bl)}
+@media(prefers-reduced-motion:reduce){
+ *:not(.screen){animation:none!important;transition:none!important}
+ .screen.active{animation:fade .4s both}
+ @keyframes fade{from{opacity:0}to{opacity:1}}
+ .sky{display:none}
+}
