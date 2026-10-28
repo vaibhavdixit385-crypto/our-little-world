@@ -14,9 +14,9 @@ const FULL = `Ankita,
 
 Class 11 se tum mujhe pasand karti thi, aur do saal baad jab tumne baat karna shuru kiya, tab mujhe pata bhi nahi tha ki yeh baat meri zindagi ka itna bada hissa ban jayegi. ${CONFIG.proposalDate} ko maine tumse apne dil ki baat kahi, aur tumhara haan mere liye aaj bhi sabse keemti cheez hai.
 
-Tumhari muskaan mujhe sach mein bahut khoobsurat lagti hai. Mushkil dino mein bhi tum mere saath khadi rahi ho, aur yeh baat main kabhi halke mein nahi leta. Tumhare paas khud paise kam hote hain, phir bhi tumne meri madad ki. Is baat ke liye main dil se shukriya kehta hoon, aur main iski kadar karta hoon.
+Tumhari muskaan mujhe sach mein bahut khoobsurat lagti hai. Mushkil dino mein bhi tum mere saath khadi rahi ho, aur yeh baat main kabhi halke mein nahi leta. Pagla khud ke paas 1350 rs hain, phir bhi vaibhav agar jarurat hogi to mere se le lena haayyyyy. Is baat ke liye main dil se shukriya kehta hoon, aur main iski kadar karta hoon.
 
-Mujhe tumse maafi bhi maangni hai. Main tumhara pichla birthday bhool gaya, aur woh meri galti thi. Kabhi kabhi ghar jaane par main tumse baat karna bhool jata hoon. Main jaanta hoon ki isse tumhe bura laga hoga, aur iska koi bahana nahi hai. Main bas itna kehna chahta hoon ki tumhari feelings mere liye bahut matter karti hain.
+Mujhe tumse maafi bhi maangni hai. Main tumhara pichla birthday bhool gaya, aur woh meri galti thi. Kabhi kabhi ghar jaane par main tumse baat karna bhool jata hoon. Main jaanta hoon ki isse tumhe bura lagta hai, aur iska koi bahana nahi hai. Main bas itna kehna chahta hoon ki tumhari feelings mere liye bahut matter karti hain.
 
 Hum dono ne galtiyan ki hain, aur hum kai baar jhagde bhi hain. Rishta sirf pyaar se nahi chalta, usme baat karna, sabr rakhna aur koshish karna bhi zaroori hai. Main woh koshish karna chahta hoon, ek ek din karke.
 
